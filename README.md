@@ -17,7 +17,7 @@ To set up this project on an Ubuntu EC2 instance, follow these steps:
      sudo apt upgrade -y
 
 4. **Install Node.js and npm**
-   - Install Node.js and npm (use `nvm` to manage versions):
+   - Install Node.js and npm 
      sudo apt install -y curl
      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
      source ~/.bashrc
@@ -58,19 +58,22 @@ To set up this project on an Ubuntu EC2 instance, follow these steps:
 
 2. **Create Directory Structure**
    - Ensure the following directory structure:
-     user-management-api/
-     ├── src/
-     │   ├── controllers/
-     │   ├── middleware/
-     │   ├── routes/
-     │   ├── docs/
-     │   └── index.ts
-     ├── dist/
-     ├── .env
-     ├── package.json
-     ├── tsconfig.json
-     └── README.md
-     
+<pre>
+user-management-api/
+├── dist/          
+├── node_modules/    
+├── src/          
+│  ├── controllers/     
+│  ├── middleware/     
+│  ├── routes/       
+│  ├── docs/        
+│  └── index.ts       
+├── .env           
+├── package.json       
+├── tsconfig.json      
+└── README.md        
+</pre>
+
 3. **Install Dependencies**
    - Run the following command to install the necessary dependencies:
      npm install
